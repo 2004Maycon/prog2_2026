@@ -11,28 +11,30 @@ def main():
     while candidato != 0:
         idade = int(input("digite sua idade: "))
         sexo = input("digite sua sexualidade(m/f): ") 
-        experiencia = input("voce tem experiencia (sim,nao): ").toLower() == "sim"
+        experiencia = input("voce tem experiencia (sim,nao): ").lower() == "sim"
         #atualiza os quantificadores
         if sexo == "f":
             if experiencia:
                 if idade < 35:
                     f35menoscomexp+=1
-                else:
-                    if idade<menor_idade:
-                        menor_idade+=idade
-                        incricao_menor_idade = candidato
+                if idade < menor_idade:
+                    menor_idade=idade
+                    incricao_menor_idade = candidato
             quantfs+=1
         elif sexo == "m":
             if idade > 45:
                 idade_mas45 += idade
                 totalmais45+= 1
             quantms += 1
-        candidato = int(input())
+        print("---"*25)
+        candidato = int(input("qual seu numero: "))
 #exibir as estatisticas (quantificadores)
-    print(f"quantos mulheres:{quantfs}")
-    print(f"quantos homens:{quantms}")
-    print(f"media de idade de homens mais 45:{idade_mas45/totalmais45 :.2f}")
-    print(f"total de mulher menor de 35:{menor_idade}")
+    print("---"*25)
+    print(f"quantos mulheres: {quantfs}")
+    print(f"quantos homens: {quantms}")
+    print(f"media de idade de homens mais 45: {idade_mas45/totalmais45 :.2f}")
+    print(f"total de mulher menor de 35: {f35menoscomexp}")
+    print(f" menor idade: {menor_idade}")
     print(f"inscriçao da mulher menor idade: {incricao_menor_idade}")
 main()
     
