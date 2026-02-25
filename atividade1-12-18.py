@@ -1,3 +1,4 @@
+import caso_teste
 def calculo_ponto(a,b):
     D = abs(a - b)
     if D < 3:
@@ -19,8 +20,8 @@ def main():
         t_e2 = float(input(f"Digite o tempo da equipe na etapa : "))
         t_e3 = float(input(f"Digite o tempo da equipe na etapa : "))
         ponto1= calculo_ponto(tempo1,t_e1)
-        ponto2=calculo_ponto(tempo1,t_e1)
-        ponto3=calculo_ponto(tempo1,t_e1)
+        ponto2=calculo_ponto(tempo2,t_e2)
+        ponto3=calculo_ponto(tempo3,t_e3)
         total_pontos = ponto1 + ponto2 + ponto3
         
         print(f"Equipe: {inscricao}")
