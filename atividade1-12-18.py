@@ -1,4 +1,3 @@
-import caso_teste
 def calculo_ponto(a,b):
     D = abs(a - b)
     if D < 3:
