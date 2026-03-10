@@ -11,7 +11,7 @@ def main():
     lista_nome = []
     while nome != " ":
         lista_nome.append(nome)
-        nome = str(input("qual o nome: "))
+        nome = str(input("qual o nome: cls"))
     print(f"essa é a lista {lista_nome}")
     if len(lista_nome) > 0 :
         for nome   in  lista_nome:
