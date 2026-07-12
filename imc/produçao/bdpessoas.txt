@@ -1,0 +1,26 @@
+Nome, RG, Idade, Peso, Altura
+Carlos Silva, 4.123.456-7, 34, 82.5, 1.78
+Mariana Santos, 5.987.654-3, 22, 61.2, 1.65
+Lucas Oliveira, 3.555.111-2, 15, 55.0, 1.68
+Beatriz Rodrigues, 2.888.999-0, 45, 73.8, 1.60
+Ricardo Almeida, 1.234.567-8, 58, 91.2, 1.82
+Camila Costa, 6.789.012-3, 29, 58.5, 1.70
+Bruno Souza, 4.444.333-2, 41, 88.0, 1.75
+Amanda Lima, 5.111.222-3, 17, 52.3, 1.58
+Fernando Pereira, 2.333.444-5, 52, 79.6, 1.73
+Juliana Gomes, 3.999.888-7, 26, 64.0, 1.67
+Gabriel Ribeiro, 1.888.777-6, 31, 85.1, 1.80
+Larissa Carvalho, 6.222.333-4, 48, 70.5, 1.62
+Thiago Martins, 4.777.666-5, 37, 94.3, 1.85
+Sofia Melo, 5.444.555-6, 19, 57.0, 1.64
+Rodrigo Rocha, 3.222.111-0, 60, 76.2, 1.71
+Patrícia Neves, 2.666.555-4, 43, 68.9, 1.59
+Marcelo Dias, 1.999.000-1, 25, 74.5, 1.76
+Letícia Cruz, 6.555.444-3, 33, 62.1, 1.66
+André Barbosa, 4.888.222-1, 50, 89.7, 1.79
+Aline Teixeira, 5.333.777-8, 16, 50.8, 1.61
+Felipe Pinto, 3.111.444-9, 28, 81.0, 1.81
+Vanessa Castro, 2.555.888-2, 39, 66.4, 1.63
+Gustavo Cardoso, 1.666.333-5, 47, 86.5, 1.77
+Isabela Fonseca, 6.111.000-2, 21, 54.9, 1.72
+Renato Vieira, 4.999.111-0, 55, 78.3, 1.74
