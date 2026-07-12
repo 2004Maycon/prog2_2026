@@ -1,11 +1,9 @@
 def bd2dic(nomearq):
     dicionario_veiculos = {}
     
-
     with open(nomearq, 'r', encoding='utf-8') as arquivo:
         linhas = [linha.strip() for linha in arquivo if linha.strip()]
-            
-            
+        
         for i in range(0, len(linhas), 4):
             if i + 3 < len(linhas):
                 placa = linhas[i]
@@ -28,7 +26,6 @@ def dic2marcas(dic):
     for placa, dados in dic.items():
         marca = dados["marca"]
         
-       
         veiculo = {
             "placa": placa,
             "modelo": dados["modelo"],
@@ -36,7 +33,6 @@ def dic2marcas(dic):
             "km": dados["km"]
         }
         
-       
         if marca not in dicionario_marcas:
             dicionario_marcas[marca] = []
             
@@ -51,7 +47,6 @@ def dic2files(dic2):
         
         with open(nome_arquivo, 'w', encoding='utf-8') as arquivo:
             for veiculo in lista_veiculos:
-               
                 linha = f"{veiculo['placa']}, {veiculo['modelo']}, {veiculo['marca']}, {veiculo['km']}\n"
                 arquivo.write(linha)
 
@@ -59,15 +54,13 @@ def dic2files(dic2):
 def main():
     arquivo_entrada = "bdveiculos.txt"
     
-    
     dados_veiculos = bd2dic(arquivo_entrada)
     
     if dados_veiculos:
-       
         dados_por_marca = dic2marcas(dados_veiculos)
         
-        
-        
+        dic2files(dados_por_marca)
+
 
 if __name__ == "__main__":
     main()
